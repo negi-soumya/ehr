@@ -1,0 +1,77 @@
+<html>
+<head>
+
+<title>EHR Audit system</title>
+<!-- CSS sheet -->
+<link rel="stylesheet" href="style.css" />
+<!-- Font CDN -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" /> <!-- Lato --> 
+
+</head>
+<body>
+<div id="wrapper">
+	<section id="header-section">
+	<div id="header-container">
+		<div class="header">
+			<div id="header-title">EHR Audit System</div>
+		</div>
+		<div class="header">
+			<div id="header-info">Enter user id to perform an action on the EHR audit log.</div>		
+		</div>
+	<div>
+	</section>
+	
+	<section id="main-section">
+	<div id="main-container">
+		<form id="form" method="GET" onsubmit="return false;">
+			<!-- Row 1 -->
+			<div class="form-div full">User ID</div>
+			<input type="text" id="keyword" class="form-div full" required>
+			
+			<!-- Row 2 -->
+			<div class="form-div half">Enter role: (patient/auditor)</div>
+			<div class="form-div half">Choose action</div>
+			<div class="form-div half">
+				<input type="text" id="distance" class="form-div" value="" required>
+			</div>
+			
+			<div class="form-div half" style="margin-bottom:30px">
+				<select id="category" style="{font-size:14px;margin-bottom:30px;}" class="form-div half" required>
+					<option value="default" selected>Query audit log</option>
+					<option value="ae">View raw audit log (blockchain containing encrypted audit data)</option>
+					<option value="hm">Test Immutability (delete a record using record ID)</option>
+<!--					<option value="ht">Hotels & Travel</option>
+					<option value="food">Food</option>
+					<option value="ps">Professional Services</option>
+-->				</select>
+			</div>
+			
+			<!-- Row 3 -->
+			<div class="form-div full">Enter ID of audit record to delete (only for testing immutability)</div>
+			<input type="text" id="location" class="form-div full" value="0">
+			<hr>
+			
+			<!-- Row 4 -->
+<!--			<div class="form-div full">
+				Want us to auto-detect your location? Check here
+				<input type="checkbox" id="auto" onclick="setAutoLocate()">
+			</div>
+-->
+			<!-- Row 5 -->
+			<input type="button" id="submit" value="SUBMIT" onclick="processForm()">
+			<input type="button" id="reset" value="CLEAR" onclick="resetForm()">
+			
+			<div id="results"></div>
+			
+		</form>
+	</div>
+	</section>
+	<br>
+</div>
+
+
+
+<!-- JS script -->
+<script src="script.js"></script>
+</body>
+</html>

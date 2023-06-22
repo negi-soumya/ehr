@@ -1,0 +1,205 @@
+/* =============================================================================
+ * 				General.
+ * =============================================================================
+ */
+#wrapper{
+	border: solid 5px #A9A9A9;
+	background-color: white;
+	width: 960px;
+	margin: auto;
+	font-family: "Lato";
+}
+
+body{
+	background-color: #D3D3D3;
+}
+
+#results{
+	/*border: solid 5px #A9A9A9;*/
+	background-color: white;
+	width: 800px;
+
+	font-family: "Lato";
+	font-size: 20px;
+	
+	text-align: left;
+}
+
+/* =============================================================================
+ * 				Header section.
+ * =============================================================================
+ */
+#header-container{
+	width: 960px;
+	height: 210px;
+	background-image: url("banner.jpeg");
+	background-size: cover;
+	background-position: bottom;
+	color: white;
+}
+
+.header{
+	width: 960px;
+	height: 105px;
+	float: left;
+}
+
+#header-title{
+	font-weight: bold;
+	font-size: 39px;
+	padding-left: 60px;
+	padding-top: 50px;
+}
+
+#header-info{
+	font-size: 32px;
+	padding-left: 60px;
+	padding-top: 20px;
+}
+
+
+/* =============================================================================
+ * 				Main section.
+ * =============================================================================
+ */
+#main-container{
+	width: 960px;
+	/*height: 630px;*/
+	background-color: white;
+	color: #00008B;
+	font-size: 22px;
+}
+
+#form{
+	width: 840px;
+	/*height: 550px;*/
+	margin-left: 60px;
+	margin-top: 40px;
+}
+
+.form-div{
+	height: 40px;
+	float: left;
+}
+
+.full{
+	width: 840px;
+}
+
+.half{
+	width: 420px;
+}
+
+input[type="text"]{
+	margin-bottom: 30px;
+}
+
+#submit{
+	width: 135px;
+	height: 50px;
+	font-family: "Lato";
+	font-size: 20px;
+	color: white;
+	background-color: #0b5394;
+	border: 0;
+	border-bottom: 5px solid #00008B; 	
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+#reset{
+	width: 135px;
+	height: 50px;
+	font-family: "Lato";
+	font-size: 20px;
+	color: white;
+	background-color: #e69138;
+	border: 0;
+	border-bottom: 5px solid #b45f06; 
+	margin-top: 40px;
+	margin-bottom: 30px;	
+}
+
+hr{
+	height: 0.5px;
+	border-width: 1;
+	color: #0b5394;
+	background-color: #0b5394;
+}
+
+/* =============================================================================
+ * 				Results section.
+ * =============================================================================
+ */
+ 
+.row{
+	width: 1010px;
+	/*border-top: solid 2px gray;*/
+	text-align: center;
+	color: black;
+	float: left;
+}
+
+.row0-cols{
+	
+	height: 50px;
+	background-color: #0b5394;
+	/*border-left: solid 1px gray;*/
+	border-right: solid 1px gray;
+	border-bottom: solid 1px gray;
+	font-size: 16;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	color: black;
+	float: left;
+}
+
+.col{
+	height: 115px;
+	background-color: white;
+	/*border-left: solid 2px gray;*/
+	border-right: solid 1px gray;
+	border-bottom: solid 1px gray;
+	font-size: 14;
+	text-align: center;
+	color: black;
+	float: left;
+	line-height: 115px;
+}
+
+.col1{
+	width: 50px;
+	
+	
+}
+
+.col2{
+	width: 100px;
+	
+}
+
+.col3{
+	width: 550px;
+	
+
+}
+
+.col4{
+	width: 150px;
+	
+}
+
+.col5{
+	width: 150px;
+	
+}
+
+img{
+	width: 90px;
+	height: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 7px;
+}
